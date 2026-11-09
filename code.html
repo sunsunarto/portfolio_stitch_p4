@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-container": "#bbc3ff",
+          "on-primary": "#ffffff",
+          "on-tertiary-fixed-variant": "#372abf",
+          "primary-fixed": "#dee0ff",
+          "surface-tint": "#4555b7",
+          "on-surface": "#121c2a",
+          "surface-bright": "#f8f9ff",
+          "on-error": "#ffffff",
+          "secondary-fixed-dim": "#93ccff",
+          "on-primary-fixed-variant": "#2c3c9e",
+          "on-secondary-container": "#00476e",
+          "background": "#f8f9ff",
+          "surface-variant": "#d9e3f6",
+          "surface-container": "#e6eeff",
+          "secondary-container": "#5bb8fe",
+          "tertiary-container": "#443acb",
+          "on-tertiary-fixed": "#100069",
+          "on-secondary-fixed": "#001d31",
+          "on-error-container": "#93000a",
+          "tertiary-fixed": "#e3dfff",
+          "outline": "#767684",
+          "secondary-fixed": "#cce5ff",
+          "surface-dim": "#d0dbed",
+          "error": "#ba1a1a",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary": "#ffffff",
+          "secondary": "#006398",
+          "on-secondary-fixed-variant": "#004b73",
+          "surface": "#f8f9ff",
+          "on-background": "#121c2a",
+          "on-primary-fixed": "#000e5e",
+          "tertiary-fixed-dim": "#c3c0ff",
+          "inverse-on-surface": "#eaf1ff",
+          "inverse-primary": "#bbc3ff",
+          "inverse-surface": "#27313f",
+          "surface-container-low": "#eff4ff",
+          "surface-container-highest": "#d9e3f6",
+          "primary-container": "#3949ab",
+          "tertiary": "#2b17b5",
+          "primary": "#1e3093",
+          "on-tertiary": "#ffffff",
+          "primary-fixed-dim": "#bbc3ff",
+          "on-surface-variant": "#454652",
+          "error-container": "#ffdad6",
+          "surface-container-high": "dee9fc",
+          "on-tertiary-container": "#c3c0ff",
+          "outline-variant": "#c6c5d4"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xs": "0.25rem",
+          "gutter-mobile": "1rem",
+          "gutter": "1.5rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "margin": "3rem",
+          "margin-mobile": "1.25rem",
+          "space-xl": "2.5rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "badge-caption": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero-mobile": [
+            "34px",
+            {
+              "lineHeight": "42px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "badge-caption": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-hero": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-sm text-headline-sm font-bold shadow-[0_2px_8px_rgba(30,48,147,0.16)]">S</div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">Sunaryo Soengkono</span><span class="font-badge-caption text-badge-caption text-secondary uppercase tracking-wider mt-1">Front-end &amp; UI/UX</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md rounded-lg"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-label-md text-label-md rounded-lg" data-path="tentang" href="#">Tentang</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="pendidikan" href="#">Pendidikan</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="pengalaman" href="#">Pengalaman</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="keahlian" href="#">Keahlian</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="kontak" href="#">Kontak</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-[0_4px_12px_rgba(57,73,171,0.15)]" data-path="hubungi-saya" href="#">Hubungi Saya</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Interactive Top Action / Quick Status Bar -->
+<section class="w-full bg-surface-container-low/70 py-space-sm">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex flex-wrap items-center justify-between gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Tersedia untuk Kolaborasi Front-End</span>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="hidden sm:inline">DKI Jakarta, Indonesia (UTC+7)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="https://sunsunarto.github.io/portfolio_p4/" rel="noopener noreferrer" target="_blank">
+<span>https://sunsunarto.github.io/portfolio_p4/</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Hero & Profile Section -->
+<section class="w-full py-space-xl relative overflow-hidden" id="hero">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Primary Persona & Bio (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-container font-badge-caption text-badge-caption uppercase tracking-wider mb-space-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            Curriculum Vitae &amp; Dossier Digital
+          </div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-[1.1] mb-space-xs">
+            Sunaryo Soengkono
+          </h1>
+<p class="font-headline-sm text-headline-sm text-primary font-medium mb-space-md">
+            Front-End Web Developer &amp; UI/UX Enthusiast
+          </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-space-lg text-justify">
+            Saya seorang pengembang web front-end dengan hasrat untuk menciptakan pengalaman digital yang modular, intuitif, dan beresonansi secara emosional. Perangkat saya mencakup Next.js, React Vite, dan pustaka seperti Ant Design, GSAP, dan lainnya yang membantu saya membangun antarmuka yang tidak hanya fungsional tetapi juga elegan dan responsif. Saya percaya bahwa setiap situs web harus terasa mulus—pengguna berhak mendapatkan kejelasan, kenyamanan, dan kepercayaan diri dalam setiap interaksi.
+          </p>
+<!-- Core Call to Actions -->
+<div class="flex flex-wrap items-center gap-space-sm mb-space-lg">
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-md hover:bg-primary transition-all" href="#kontak">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+              Hubungi Saya
+            </a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all" href="https://portfolio-sunaryo.vercel.app/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+              Kunjungi Portofolio Live
+            </a>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-all" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+              Unduh CV / Cetak
+            </button>
+</div>
+<!-- Tech Stack Badges -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Spesialisasi &amp; Komponen Utama:</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>Next.js
+              </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>React Vite
+              </span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">JavaScript (ES6+)</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">CSS3 Modern</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">HTML5 Semantik</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">Ant Design</span>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">GSAP Animation</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Profile Card & Quick Stats Dossier (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-36 h-36 rounded-full bg-secondary-fixed/40 blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-space-md mb-space-md">
+<div class="w-16 h-16 rounded-xl bg-primary-container text-on-primary flex items-center justify-center font-display-hero text-[28px] font-bold shadow-md">
+                SS
+              </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sunaryo Soengkono</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Front-End Developer</span>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-primary">location_on</span>
+                  DKI Jakarta, Indonesia
+                </span>
+</div>
+</div>
+<!-- Key Metadata Table -->
+<div class="flex flex-col gap-space-xs py-space-sm bg-surface-container-low/60 p-space-md rounded-lg mb-space-md font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Tanggal Lahir:</span>
+<span class="text-on-surface font-semibold">02 April 2009</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Status Pendidikan:</span>
+<span class="text-primary font-semibold">SMK Tri Ratna (RPL)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Orientasi:</span>
+<span class="text-on-surface font-semibold">Modular UI &amp; Web Eng.</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Fokus Desain:</span>
+<span class="text-on-surface font-semibold">Kejelasan &amp; Aksesibilitas</span>
+</div>
+</div>
+<!-- Quantitative Metrics (Stats Bar) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-display-hero text-[30px] font-bold text-primary leading-none">12+</span>
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-1">Modul Webinar</span>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant">Pelatihan &amp; Lab Praktis</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-display-hero text-[30px] font-bold text-secondary leading-none">4</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">emoji_events</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-1">Prestasi &amp; Sertifikasi</span>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant">Nasional &amp; Kompetisi</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Status Ketersediaan:</span>
+<span class="inline-flex items-center gap-1 font-semibold text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Aktif Terbuka
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Riwayat Pendidikan Section -->
+<section class="w-full py-space-xl bg-surface-container-low/40" id="pendidikan">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-xs">
+<div>
+<span class="font-badge-caption text-badge-caption uppercase tracking-wider text-primary font-bold">Trajektori Akademik</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Riwayat Pendidikan</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Rekam jejak formal dengan komitmen pada disiplin kejuruan rekayasa perangkat lunak dan keunggulan akademik.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Pendidikan 1: SMK Tri Ratna -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-badge-caption text-badge-caption uppercase font-semibold">
+                Sedang Ditempuh
+              </span>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant">2024 - Sekarang</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-1">
+              SMK Tri Ratna Jakarta Barat
+            </h3>
+<p class="font-body-md text-body-md text-primary font-medium mb-space-sm">
+              Rekayasa Perangkat Lunak (RPL)
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Mendalami logika pemrograman, arsitektur data, rekayasa web modern, dan metodologi perancangan antarmuka perangkat lunak.
+            </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span>Evaluasi Predikat:</span>
+<span class="font-semibold text-primary">Predikat Baik (Aktif)</span>
+</div>
+</div>
+<!-- Pendidikan 2: JHS Mutiara Bangsa 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-badge-caption text-badge-caption uppercase font-semibold">
+                Lulus Resmi
+              </span>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant">Juli 2021 - Mei 2024</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-1">
+              JHS Mutiara Bangsa 3 School
+            </h3>
+<p class="font-body-md text-body-md text-secondary font-medium mb-space-sm">
+              Pendidikan Menengah Pertama (Jakarta Barat)
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Aktif dalam kegiatan kepemimpinan siswa, pengorganisasian regu, dan fondasi penguasaan bahasa multinasional.
+            </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span>Status Kelulusan:</span>
+<span class="font-semibold text-secondary">Berijazah (Predikat Baik)</span>
+</div>
+</div>
+<!-- Pendidikan 3: Elementary Mutiara Bangsa 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-badge-caption text-badge-caption uppercase font-semibold">
+                Lulus Resmi
+              </span>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant">Juli 2013 - Mei 2014</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-1">
+              Elementary Mutiara Bangsa 3 School
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium mb-space-sm">
+              Pendidikan Dasar (Jakarta Barat)
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Pembentukan karakter dasar, ketekunan analitis, dan adaptasi kemampuan literasi digital sejak dini.
+            </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span>Status Kelulusan:</span>
+<span class="font-semibold text-on-surface">Berijazah (Predikat Baik)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pengalaman, Prestasi & Webinar Section -->
+<section class="w-full py-space-xl" id="pengalaman">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+<!-- Top Split: Prestasi & Kepemimpinan Organisasi -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left: Prestasi & Kompetisi (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="mb-space-md">
+<span class="font-badge-caption text-badge-caption uppercase tracking-wider text-primary font-bold">Pengakuan &amp; Validasi</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Prestasi &amp; Sertifikasi</h2>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Prestasi 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex-shrink-0 flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">military_tech</span>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Medali Perak - Peringkat Nasional OSMHI 2025</h4>
+<span class="font-badge-caption text-badge-caption px-2 py-0.5 rounded bg-surface-container text-primary font-semibold">Agustus 2025</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Olimpiade Sains &amp; Humaniora Indonesia bidang <strong>English and Information Technology (IT)</strong>, menguji kecakapan komputasi dan analisis linguistik teknis.
+                </p>
+</div>
+</div>
+<!-- Prestasi 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex-shrink-0 flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[24px]">web</span>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Kompetisi Membuat Website JHIC</h4>
+<span class="font-badge-caption text-badge-caption px-2 py-0.5 rounded bg-surface-container text-primary font-semibold">Agustus 2025</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Fokus eksplorasi spesifik pada <strong>UI/UX &amp; Typography Hierarchy Focus</strong>. Perancangan tipografi dinamis dan komposisi layout editorial web responsif.
+                </p>
+</div>
+</div>
+<!-- Prestasi 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex-shrink-0 flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[24px]">devices</span>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Kompetisi Website INCEPTION Trisakti</h4>
+<span class="font-badge-caption text-badge-caption px-2 py-0.5 rounded bg-surface-container text-primary font-semibold">September 2025</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Kategori rancang bangun <strong>UX/UI Interaction Architecture</strong> dengan integrasi prinsip user-centric, wireframing adaptif, dan prototyping presisi.
+                </p>
+</div>
+</div>
+<!-- Prestasi 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex-shrink-0 flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">translate</span>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">HSK Level 2 (Hanyu Shuiping Kaoshi)</h4>
+<span class="font-badge-caption text-badge-caption px-2 py-0.5 rounded bg-surface-container text-primary font-semibold">Desember 2017</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Lulus dengan predikat baik dalam sertifikasi internasional kefasihan dan kompetensi komunikasi bahasa Mandarin dasar-menengah.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Pengalaman Organisasi (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="mb-space-md">
+<span class="font-badge-caption text-badge-caption uppercase tracking-wider text-secondary font-bold">Kepemimpinan</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Organisasi Siswa</h2>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col h-full justify-between">
+<div>
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">photo_camera</span>
+</span>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Dewan Penggalang</h3>
+<span class="font-badge-caption text-badge-caption text-secondary font-semibold">Agustus 2022 - Juli 2023 (1 Tahun)</span>
+</div>
+</div>
+<div class="mb-space-md">
+<span class="inline-block px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold mb-2">
+                  Divisi Dokumentasi &amp; Arsip Visual
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Bertanggung jawab penuh atas visual storytelling organisasi, standarisasi aset fotografi, dan arsitektur pengarsipan informasi digital.
+                </p>
+</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span><strong>Pelestarian Momen:</strong> Menangkap dan mengkurasikan kegiatan inti secara berkala dan beresolusi tinggi.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span><strong>Pengarsipan Digital:</strong> Mengelola struktur repositori visual terpusat yang rapi dan mudah diakses lintas divisi.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span>
+<span><strong>Kurasi Naratif:</strong> Menyusun tata letak materi rekap visual yang informatif dan estetik.</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm">
+<span class="font-semibold text-primary">Dampak Terapan:</span>
+<p class="text-on-surface-variant mt-0.5 text-xs">
+                Membentuk etos kerja visual presisi, disiplin klasifikasi berkas, dan pemahaman mendalam tentang tata ruang tata letak (UI composition).
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Split: 12 Webinar & Pelatihan SkillEcted Showcase -->
+<div class="w-full flex flex-col">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-md gap-space-xs">
+<div>
+<span class="font-badge-caption text-badge-caption uppercase tracking-wider text-primary font-bold">Pengembangan Berkelanjutan</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Pelatihan Intensif &amp; Webinar SkillEcted</h3>
+</div>
+<div class="flex items-center gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-container font-label-sm text-label-sm font-semibold">Periode: Maret s/d Oktober 2025</span>
+<span>12 Modul Selesai</span>
+</div>
+</div>
+<!-- 12 Webinar Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 01</span>
+<span class="material-symbols-outlined text-[16px] text-primary">laptop_mac</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Build Your Own Portfolio Website</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • Web Basics</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 02</span>
+<span class="material-symbols-outlined text-[16px] text-primary">wb_sunny</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Build a Weather App with React</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • React API</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 03</span>
+<span class="material-symbols-outlined text-[16px] text-primary">terminal</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Node.js For Beginners</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • Runtime Fund.</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 04</span>
+<span class="material-symbols-outlined text-[16px] text-primary">code</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">JavaScript Web Apps</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • Vanilla ES6+</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 05</span>
+<span class="material-symbols-outlined text-[16px] text-primary">integration_instructions</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Python Programming</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • Logika Algoritma</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 06</span>
+<span class="material-symbols-outlined text-[16px] text-primary">shield</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Cybersecurity Roadmap</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • Web Sec Ops</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 07</span>
+<span class="material-symbols-outlined text-[16px] text-primary">forum</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Smart Chat Using React</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • Interactive UI</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 08</span>
+<span class="material-symbols-outlined text-[16px] text-primary">auto_fix_high</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Power Query in Excel with AI</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • AI Productivity</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 09</span>
+<span class="material-symbols-outlined text-[16px] text-primary">data_object</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Java Career Track</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • OOP Concepts</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 10</span>
+<span class="material-symbols-outlined text-[16px] text-primary">sports_esports</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Python Snake Game</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • Game Loop Logic</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 11</span>
+<span class="material-symbols-outlined text-[16px] text-primary">movie</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Movie Search App with React</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • State &amp; Fetch</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant mb-space-xs">
+<span class="font-badge-caption text-badge-caption font-bold text-primary">MODUL 12</span>
+<span class="material-symbols-outlined text-[16px] text-primary">check_box</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-surface font-bold">To-Do App with Local Storage</h4>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant mt-3">SkillEcted Webinar • Persistence CRUD</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Keahlian & Pilar Kompetensi Section -->
+<section class="w-full py-space-xl bg-surface-container-low/50" id="keahlian">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-xs">
+<div>
+<span class="font-badge-caption text-badge-caption uppercase tracking-wider text-primary font-bold">Matriks Kemampuan</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Keahlian &amp; Kompetensi</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Integrasi harmonis antara keahlian teknis pemrograman, kepekaan arsitektur antarmuka, penguasaan bahasa, dan etika kerja terstruktur.
+        </p>
+</div>
+<!-- 4-Column High Density Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Column 1: Software Skills / Bahasa Pemrograman -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[20px]">code_blocks</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-space-sm">Bahasa &amp; Kode</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Landasan logika dan penyusunan komponen sistem antarmuka web modern.
+            </p>
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span>JavaScript</span>
+<span class="text-primary font-semibold">Tingkat Lanjut</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[90%]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span>CSS3</span>
+<span class="text-primary font-semibold">Desain &amp; Responsif</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[92%]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span>HTML5</span>
+<span class="text-primary font-semibold">Semantik &amp; Modular</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[95%]"></div>
+</div>
+</div>
+</div>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant pt-space-md">Prinsip: Modular, Clean Code, W3C</span>
+</div>
+<!-- Column 2: Pilar Profesi -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed text-on-secondary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[20px]">architecture</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-space-sm">Pilar Profesi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Tiga sudut pandang fundamental dalam mengeksekusi proyek web digital.
+            </p>
+<div class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">Programmer</span>
+<span class="text-on-surface-variant text-xs">Spesialis front-end modular, render cepat &amp; reaktif.</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Design</span>
+<span class="text-on-surface-variant text-xs">Ketajaman visual, estetika kontras, dan tipografi rapi.</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">UI / UX</span>
+<span class="text-on-surface-variant text-xs">Navigasi intuitif, kepuasan pengguna, interaksi mulus.</span>
+</div>
+</div>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant pt-space-md">Fokus: Human-Centered Design</span>
+</div>
+<!-- Column 3: Kemahiran Bahasa -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[20px]">language</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-space-sm">Kemahiran Bahasa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Kemampuan komunikasi multibahasa untuk kolaborasi tim global maupun lokal.
+            </p>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div>
+<span class="font-title-md text-title-md text-on-surface font-semibold block">Indonesian</span>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant">Bahasa Ibu / Native</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-badge-caption text-badge-caption font-bold">Native</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div>
+<span class="font-title-md text-title-md text-on-surface font-semibold block">English</span>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant">Dokumentasi &amp; Komunikasi</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-badge-caption text-badge-caption font-bold">Fluent</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div>
+<span class="font-title-md text-title-md text-on-surface font-semibold block">Chinese</span>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant">Lisan &amp; Teks Dasar</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-badge-caption text-badge-caption font-bold">HSK 2</span>
+</div>
+</div>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant pt-space-md">Tersertifikasi HSK 2 Resmi</span>
+</div>
+<!-- Column 4: Karakter & Etos Kerja -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed text-on-secondary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold mb-space-sm">Karakter &amp; Etos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Nilai personal yang menjaga integritas performa serta penyelesaian tugas.
+            </p>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">timer</span>
+<div>
+<span class="font-semibold text-on-surface">Punctuality:</span>
+<span class="text-on-surface-variant text-xs block">Disiplin tenggat waktu presisi.</span>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">folder_open</span>
+<div>
+<span class="font-semibold text-on-surface">Organized:</span>
+<span class="text-on-surface-variant text-xs block">Struktur berkas &amp; alur kerja rapi.</span>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">view_module</span>
+<div>
+<span class="font-semibold text-on-surface">Modular Thinking:</span>
+<span class="text-on-surface-variant text-xs block">Komponen dapat dipakai ulang.</span>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">search_check</span>
+<div>
+<span class="font-semibold text-on-surface">Attention to Detail:</span>
+<span class="text-on-surface-variant text-xs block">Ketelitian mikro-spacing &amp; UX.</span>
+</div>
+</div>
+</div>
+</div>
+<span class="font-badge-caption text-badge-caption text-on-surface-variant pt-space-md">Etika Kerja Profesional</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Kontak & Hubungi Section -->
+<section class="w-full py-space-xl" id="kontak">
+<div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Left: Info & Interactive Copyables (7 Cols) -->
+<div class="lg:col-span-7 p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col justify-between">
+<div>
+<span class="font-badge-caption text-badge-caption uppercase tracking-wider text-primary font-bold">Saluran Komunikasi</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold mb-space-xs">Mari Terhubung &amp; Berkolaborasi</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+              Saya terbuka untuk kesempatan kolaborasi pengembangan front-end, proyek antarmuka web, maupun program magang teknis.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm mb-space-lg">
+<!-- Email Card -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-badge-caption text-badge-caption text-on-surface-variant uppercase font-semibold">Surel Resmi</span>
+<span class="material-symbols-outlined text-primary text-[18px]">email</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold break-all select-all">sunaryo24259@outlook.com</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<a class="text-xs text-primary font-semibold hover:underline" href="mailto:sunaryo24259@outlook.com">Kirim Email</a>
+<span class="text-outline-variant">•</span>
+<button class="text-xs text-secondary hover:underline" onclick="navigator.clipboard.writeText('sunaryo24259@outlook.com'); alert('Email berhasil disalin ke clipboard!');">Salin</button>
+</div>
+</div>
+<!-- Phone Card -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-badge-caption text-badge-caption text-on-surface-variant uppercase font-semibold">Telepon / WhatsApp</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">chat</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold select-all">+62 859 3442 7040</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<a class="text-xs text-primary font-semibold hover:underline" href="https://wa.me/6285934427040" rel="noopener noreferrer" target="_blank">Chat WhatsApp</a>
+<span class="text-outline-variant">•</span>
+<button class="text-xs text-secondary hover:underline" onclick="navigator.clipboard.writeText('+6285934427040'); alert('Nomor telepon berhasil disalin!');">Salin</button>
+</div>
+</div>
+</div>
+<!-- Social Handles Grid -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Jejaring Sosial &amp; Portofolio Kode:</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<a class="p-2 rounded bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-1.5 text-on-surface" href="https://github.com/Sunsunarto" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-primary">data_object</span>
+<span class="font-label-sm text-label-sm truncate">Sunsunarto</span>
+</a>
+<a class="p-2 rounded bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-1.5 text-on-surface" href="https://instagram.com/artos21" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-primary">alternate_email</span>
+<span class="font-label-sm text-label-sm truncate">@artos21</span>
+</a>
+<a class="p-2 rounded bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-1.5 text-on-surface" href="https://instagram.com/artos216" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-primary">alternate_email</span>
+<span class="font-label-sm text-label-sm truncate">@artos216</span>
+</a>
+<a class="p-2 rounded bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-1.5 text-on-surface" href="https://www.linkedin.com/in/sunaryo-soengkono" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-primary">badge</span>
+<span class="font-label-sm text-label-sm truncate">Sunaryo S.</span>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex flex-wrap items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<span>Respons cepat melalui Surel &amp; WhatsApp resmi.</span>
+<a class="font-label-sm text-label-sm font-semibold text-primary inline-flex items-center gap-1" href="https://portfolio-sunaryo.vercel.app/" rel="noopener noreferrer" target="_blank">
+              Kunjungi Web Showcase Live
+              <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right: Direct Message Action Card (5 Cols) -->
+<div class="lg:col-span-5 p-space-lg rounded-xl bg-primary-container text-on-primary flex flex-col justify-between relative overflow-hidden shadow-lg">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div>
+<div class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/15 text-primary-fixed font-badge-caption text-badge-caption uppercase mb-space-md">
+<span class="material-symbols-outlined text-[14px]">send</span>
+              Kirim Pesan Cepat
+            </div>
+<h3 class="font-headline-md text-headline-md font-bold mb-space-xs text-on-primary">
+              Mulai Diskusi Proyek
+            </h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mb-space-md">
+              Isi formulir ringkas di bawah ini untuk mengirimkan surel langsung ke inbox saya dengan subjek yang telah disesuaikan.
+            </p>
+<form class="flex flex-col gap-space-sm" id="contactForm" onsubmit="event.preventDefault(); const name = document.getElementById('senderName').value; const msg = document.getElementById('senderMessage').value; window.location.href = `mailto:sunaryo24259@outlook.com?subject=Inquiry Proyek dari ${encodeURIComponent(name)}&amp;body=${encodeURIComponent(msg)}`;">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-primary-fixed" for="senderName">Nama Lengkap / Instansi</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary-fixed" id="senderName" placeholder="e.g. Budi Santoso (PT Inovasi)" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-primary-fixed" for="senderMessage">Rencana Proyek atau Pesan</label>
+<textarea class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary-fixed resize-none" id="senderMessage" placeholder="Halo Sunaryo, kami tertarik untuk mendiskusikan implementasi front-end..." required="" rows="3"></textarea>
+</div>
+<button class="w-full mt-space-xs py-space-sm px-space-md rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold hover:bg-surface-container transition-all flex items-center justify-center gap-space-xs shadow-md" type="submit">
+<span>Kirim Pesan Sekarang</span>
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+</form>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-primary-fixed font-badge-caption text-badge-caption">
+<span>Privasi Terjaga • Komunikasi Langsung</span>
+<span>Versi CV: 2025.1</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Client-side Script for Navigation & Smooth Scroll -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId !== '#') {
+          const targetElem = document.querySelector(targetId);
+          if (targetElem) {
+            e.preventDefault();
+            targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="max-w-[1200px] mx-auto px-margin-mobile lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded bg-primary flex items-center justify-center text-on-primary font-label-sm text-label-sm font-bold">S</div><span class="font-title-md text-title-md text-on-surface font-semibold">Sunaryo Soengkono</span></div><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">© 2024 Sunaryo Soengkono. Front-end Web Developer &amp; UI/UX Enthusiast. All rights reserved.</p><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="tentang" href="#">Tentang</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="keahlian" href="#">Keahlian</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="kontak" href="#">Kontak</a></div></div></footer></body></html>
